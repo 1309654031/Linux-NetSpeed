@@ -28,8 +28,8 @@ installbbr(){
 	if [[ "${release}" == "centos" ]]; then
 		if [[ ${version} = "6" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O kernel-headers-c6.rpm https://github.com/ylx2016/kernel/releases/download/5.5.5/kernel-headers-5.5.5-1-c6.x86_64.rpm
-				wget -N -O kernel-c6.rpm https://github.com/ylx2016/kernel/releases/download/5.5.5/kernel-5.5.5-1-c6.x86_64.rpm
+				wget -N -O kernel-headers-c6.rpm https://github.com/1309654031/kernel/releases/download/5.5.5/kernel-headers-5.5.5-1-c6.x86_64.rpm
+				wget -N -O kernel-c6.rpm https://github.com/1309654031/kernel/releases/download/5.5.5/kernel-5.5.5-1-c6.x86_64.rpm
 			
 				yum install -y kernel-c6.rpm
 				yum install -y kernel-headers-c6.rpm
@@ -53,8 +53,8 @@ installbbr(){
 			fi	
 			
 		elif [[ ${version} = "8" ]]; then
-			wget -N -O kernel-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.5.5/kernel-5.5.5-1-c8.x86_64.rpm
-			wget -N -O kernel-headers-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.5.5/kernel-headers-5.5.5-1-c8.x86_64.rpm
+			wget -N -O kernel-c8.rpm https://github.com/1309654031/kernel/releases/download/5.5.5/kernel-5.5.5-1-c8.x86_64.rpm
+			wget -N -O kernel-headers-c8.rpm https://github.com/1309654031/kernel/releases/download/5.5.5/kernel-headers-5.5.5-1-c8.x86_64.rpm
 
 			yum install -y kernel-c8.rpm
 			yum install -y kernel-headers-c8.rpm
@@ -66,8 +66,8 @@ installbbr(){
 		if [[ "${release}" == "debian" ]]; then
 			if [[ ${version} = "8" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-d8.deb https://github.com/ylx2016/kernel/releases/download/5.5.5/linux-image-5.5.5_5.5.5-1-d8_amd64.deb
-					wget -N -O linux-headers-d8.deb https://github.com/ylx2016/kernel/releases/download/5.5.5/linux-headers-5.5.5_5.5.5-1-d8_amd64.deb
+					wget -N -O linux-image-d8.deb https://github.com/1309654031/kernel/releases/download/5.5.5/linux-image-5.5.5_5.5.5-1-d8_amd64.deb
+					wget -N -O linux-headers-d8.deb https://github.com/1309654031/kernel/releases/download/5.5.5/linux-headers-5.5.5_5.5.5-1-d8_amd64.deb
 				
 					dpkg -i linux-image-d8.deb
 					dpkg -i linux-headers-d8.deb
@@ -79,8 +79,8 @@ installbbr(){
 		
 			elif [[ ${version} = "9" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-d9.deb https://github.com/ylx2016/kernel/releases/download/5.5.5/linux-image-5.5.5_5.5.5-1-d9_amd64.deb
-					wget -N -O linux-headers-d9.deb https://github.com/ylx2016/kernel/releases/download/5.5.5/linux-headers-5.5.5_5.5.5-1-d9_amd64.deb
+					wget -N -O linux-image-d9.deb https://github.com/1309654031/kernel/releases/download/5.5.5/linux-image-5.5.5_5.5.5-1-d9_amd64.deb
+					wget -N -O linux-headers-d9.deb https://github.com/1309654031/kernel/releases/download/5.5.5/linux-headers-5.5.5_5.5.5-1-d9_amd64.deb
 				
 					dpkg -i linux-image-d9.deb
 					dpkg -i linux-headers-d9.deb
@@ -105,8 +105,8 @@ installbbr(){
 		elif [[ "${release}" == "ubuntu" ]]; then
 			if [[ ${version} = "16" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-u16.deb https://github.com/ylx2016/kernel/releases/download/5.4.14/linux-image-5.4.14_5.4.14-1-u16_amd64.deb
-					wget -N -O linux-headers-u16.deb https://github.com/ylx2016/kernel/releases/download/5.4.14/linux-headers-5.4.14_5.4.14-1-u16_amd64.deb
+					wget -N -O linux-image-u16.deb https://github.com/1309654031/kernel/releases/download/5.4.14/linux-image-5.4.14_5.4.14-1-u16_amd64.deb
+					wget -N -O linux-headers-u16.deb https://github.com/1309654031/kernel/releases/download/5.4.14/linux-headers-5.4.14_5.4.14-1-u16_amd64.deb
 				
 					dpkg -i linux-image-u16.deb
 					dpkg -i linux-headers-u16.deb
@@ -118,8 +118,8 @@ installbbr(){
 		
 			elif [[ ${version} = "18" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-u18.deb https://github.com/ylx2016/kernel/releases/download/5.4.14/linux-image-5.4.14_5.4.14-1-u18_amd64.deb
-					wget -N -O linux-headers-u18.deb https://github.com/ylx2016/kernel/releases/download/5.4.14/linux-headers-5.4.14_5.4.14-1-u18_amd64.deb
+					wget -N -O linux-image-u18.deb https://github.com/1309654031/kernel/releases/download/5.4.14/linux-image-5.4.14_5.4.14-1-u18_amd64.deb
+					wget -N -O linux-headers-u18.deb https://github.com/1309654031/kernel/releases/download/5.4.14/linux-headers-5.4.14_5.4.14-1-u18_amd64.deb
 				
 					dpkg -i linux-image-u18.deb
 					dpkg -i linux-headers-u18.deb
@@ -130,8 +130,8 @@ installbbr(){
 				fi
 			elif [[ ${version} = "19" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-u19.deb https://github.com/ylx2016/kernel/releases/download/5.4.14/linux-headers-5.4.14_5.4.14-1-u19_amd64.deb
-					wget -N -O linux-headers-u19.deb https://github.com/ylx2016/kernel/releases/download/5.4.14/linux-image-5.4.14_5.4.14-1-u19_amd64.deb
+					wget -N -O linux-image-u19.deb https://github.com/1309654031/kernel/releases/download/5.4.14/linux-headers-5.4.14_5.4.14-1-u19_amd64.deb
+					wget -N -O linux-headers-u19.deb https://github.com/1309654031/kernel/releases/download/5.4.14/linux-image-5.4.14_5.4.14-1-u19_amd64.deb
 				
 					dpkg -i linux-image-u19.deb
 					dpkg -i linux-headers-u19.deb
@@ -267,8 +267,8 @@ installxanmod(){
 				echo -e "${Error} 还在用32位内核，别再见了 !" && exit 1
 			fi
 		elif [[ ${version} = "8" ]]; then
-				wget -N -O kernel-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.5.1xanmod/kernel-5.5.1_xanmod1-1-c8.x86_64.rpm
-				wget -N -O kernel-headers-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.5.1xanmod/kernel-headers-5.5.1_xanmod1-1-c8.x86_64.rpm
+				wget -N -O kernel-c8.rpm https://github.com/1309654031/kernel/releases/download/5.5.1xanmod/kernel-5.5.1_xanmod1-1-c8.x86_64.rpm
+				wget -N -O kernel-headers-c8.rpm https://github.com/1309654031/kernel/releases/download/5.5.1xanmod/kernel-headers-5.5.1_xanmod1-1-c8.x86_64.rpm
 				
 				yum install -y kernel-c8.rpm
 				yum install -y kernel-headers-c8.rpm
@@ -279,8 +279,8 @@ installxanmod(){
 	elif [[ "${release}" == "debian" ]]; then
 		if [[ ${version} = "9" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O linux-headers-d9.deb https://github.com/ylx2016/kernel/releases/download/5.5.1xanmod/linux-headers-5.5.1-xanmod1_5.5.1-xanmod1-1-d9_amd64.deb
-				wget -N -O linux-image-d9.deb https://github.com/ylx2016/kernel/releases/download/5.5.1xanmod/linux-image-5.5.1-xanmod1_5.5.1-xanmod1-1-d9_amd64.deb
+				wget -N -O linux-headers-d9.deb https://github.com/1309654031/kernel/releases/download/5.5.1xanmod/linux-headers-5.5.1-xanmod1_5.5.1-xanmod1-1-d9_amd64.deb
+				wget -N -O linux-image-d9.deb https://github.com/1309654031/kernel/releases/download/5.5.1xanmod/linux-image-5.5.1-xanmod1_5.5.1-xanmod1-1-d9_amd64.deb
 				
 				dpkg -i linux-image-d9.deb
 				dpkg -i linux-headers-d9.deb
@@ -328,8 +328,8 @@ installbbr2(){
 	if [[ "${release}" == "centos" ]]; then
 		if [[ ${version} = "7" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O kernel-c7.rpm https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-5.4.0_rc6-1-bbr2-c7.x86_64.rpm
-				wget -N -O kernel-headers-c7.rpm https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-headers-5.4.0_rc6-1-bbr2-c7.x86_64.rpm
+				wget -N -O kernel-c7.rpm https://github.com/1309654031/kernel/releases/download/5.4.0r6bbr2/kernel-5.4.0_rc6-1-bbr2-c7.x86_64.rpm
+				wget -N -O kernel-headers-c7.rpm https://github.com/1309654031/kernel/releases/download/5.4.0r6bbr2/kernel-headers-5.4.0_rc6-1-bbr2-c7.x86_64.rpm
 				
 				yum install -y kernel-c7.rpm
 				yum install -y kernel-headers-c7.rpm
@@ -339,8 +339,8 @@ installbbr2(){
 				echo -e "${Error} 还在用32位内核，别再见了 !" && exit 1
 			fi
 		elif [[ ${version} = "8" ]]; then
-				wget -N -O kernel-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-5.4.0_rc6-1-bbr2-c8.x86_64.rpm
-				wget -N -O kernel-headers-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-headers-5.4.0_rc6-1-bbr2-c8.x86_64.rpm
+				wget -N -O kernel-c8.rpm https://github.com/1309654031/kernel/releases/download/5.4.0r6bbr2/kernel-5.4.0_rc6-1-bbr2-c8.x86_64.rpm
+				wget -N -O kernel-headers-c8.rpm https://github.com/1309654031/kernel/releases/download/5.4.0r6bbr2/kernel-headers-5.4.0_rc6-1-bbr2-c8.x86_64.rpm
 				
 				yum install -y kernel-c8.rpm
 				yum install -y kernel-headers-c8.rpm
@@ -351,8 +351,8 @@ installbbr2(){
 	elif [[ "${release}" == "debian" ]]; then
 		if [[ ${version} = "9" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O linux-image-d9.deb https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-image-5.4.0-rc6_5.4.0-rc6-1-bbr2-d9_amd64.deb
-				wget -N -O linux-headers-d9.deb https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-headers-5.4.0-rc6_5.4.0-rc6-1-bbr2-d9_amd64.deb
+				wget -N -O linux-image-d9.deb https://github.com/1309654031/kernel/releases/download/5.4.0r6bbr2/linux-image-5.4.0-rc6_5.4.0-rc6-1-bbr2-d9_amd64.deb
+				wget -N -O linux-headers-d9.deb https://github.com/1309654031/kernel/releases/download/5.4.0r6bbr2/linux-headers-5.4.0-rc6_5.4.0-rc6-1-bbr2-d9_amd64.deb
 				
 				dpkg -i linux-image-d9.deb
 				dpkg -i linux-headers-d9.deb
@@ -363,8 +363,8 @@ installbbr2(){
 			fi	
 		elif [[ ${version} = "10" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O linux-headers-d10.deb https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-headers-5.4.0-rc6_5.4.0-rc6-1-bbr2-d10_amd64.deb
-				wget -N -O linux-image-d10.deb https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-image-5.4.0-rc6_5.4.0-rc6-1-bbr2-d10_amd64.deb
+				wget -N -O linux-headers-d10.deb https://github.com/1309654031/kernel/releases/download/5.4.0r6bbr2/linux-headers-5.4.0-rc6_5.4.0-rc6-1-bbr2-d10_amd64.deb
+				wget -N -O linux-image-d10.deb https://github.com/1309654031/kernel/releases/download/5.4.0r6bbr2/linux-image-5.4.0-rc6_5.4.0-rc6-1-bbr2-d10_amd64.deb
 					
 				dpkg -i linux-image-d10.deb
 				dpkg -i linux-headers-d10.deb
@@ -411,8 +411,8 @@ installzen(){
 				echo -e "${Error} 还在用32位内核，别再见了 !" && exit 1
 			fi
 		elif [[ ${version} = "8" ]]; then
-				wget -N -O kernel-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.5.2zen/kernel-5.5.2_zen-1-c8.x86_64.rpm
-				wget -N -O kernel-headers-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.5.2zen/kernel-headers-5.5.2_zen-1-c8.x86_64.rpm
+				wget -N -O kernel-c8.rpm https://github.com/1309654031/kernel/releases/download/5.5.2zen/kernel-5.5.2_zen-1-c8.x86_64.rpm
+				wget -N -O kernel-headers-c8.rpm https://github.com/1309654031/kernel/releases/download/5.5.2zen/kernel-headers-5.5.2_zen-1-c8.x86_64.rpm
 				
 				yum install -y kernel-c8.rpm
 				yum install -y kernel-headers-c8.rpm
@@ -423,8 +423,8 @@ installzen(){
 	elif [[ "${release}" == "debian" ]]; then
 		if [[ ${version} = "9" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O linux-headers-d9.deb https://github.com/ylx2016/kernel/releases/download/5.5.2zen/linux-headers-5.5.2-zen_5.5.2-zen-1-d9_amd64.deb
-				wget -N -O linux-image-d9.deb https://github.com/ylx2016/kernel/releases/download/5.5.2zen/linux-image-5.5.2-zen_5.5.2-zen-1-d9_amd64.deb
+				wget -N -O linux-headers-d9.deb https://github.com/1309654031/kernel/releases/download/5.5.2zen/linux-headers-5.5.2-zen_5.5.2-zen-1-d9_amd64.deb
+				wget -N -O linux-image-d9.deb https://github.com/1309654031/kernel/releases/download/5.5.2zen/linux-image-5.5.2-zen_5.5.2-zen-1-d9_amd64.deb
 				
 				dpkg -i linux-image-d9.deb 
 				dpkg -i linux-headers-d9.deb
